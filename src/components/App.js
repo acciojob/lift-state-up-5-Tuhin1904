@@ -7,7 +7,8 @@ const App = () => {
   const [isLoggedIn ,setIsLoggedIn ] = useState(false);
   const setLogin = () => {
     setIsLoggedIn(true);
-  }
+  };
+
   return (
     <div>
         <h1>Parent Component</h1>
