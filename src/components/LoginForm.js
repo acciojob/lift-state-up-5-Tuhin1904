@@ -15,10 +15,10 @@ const LoginForm = ({isLoggedIn,setLogin}) => {
             <label>Username:</label>
             <input type='text' value={username} onChange={(e) => setUsername(e.target.value)} required/>
             <br/>
-            <br/>
+            
             <label>Password:</label>
             <input type='password'value={password} onChange={(e) => setPassword(e.target.value)} required/>
-            <br/>
+           <br/>
             <button type='submit'>Login</button>
         </form>
     </div>}
