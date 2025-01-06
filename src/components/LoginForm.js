@@ -9,8 +9,8 @@ const LoginForm = ({isLoggedIn,setLogin}) => {
         setLogin()
     }
   return (
-    <>
-    {isLoggedIn ? <>You are logged in!</> : <><div>
+    <div>
+    {isLoggedIn ? <h3>You are logged in!</h3> : <><div>
         <form onSubmit={handleSubmit}>
             <label>Username: </label>
             <input type='text' value={username} onChange={(e) => setUsername(e.target.value)} required/>
@@ -23,7 +23,7 @@ const LoginForm = ({isLoggedIn,setLogin}) => {
         </form>
     </div></>}
     
-    </>
+    </div>
   )
 }
 
