@@ -10,18 +10,18 @@ const LoginForm = ({isLoggedIn,setLogin}) => {
     }
   return (
     <div>
-    {isLoggedIn ? <h3>You are logged in!</h3> : <><div>
+    {isLoggedIn ? <h3>You are logged in!</h3> : <div>
         <form onSubmit={handleSubmit}>
-            <label>Username: </label>
+            <label>Username:</label>
             <input type='text' value={username} onChange={(e) => setUsername(e.target.value)} required/>
             <br/>
             <br/>
-            <label>Password: </label>
+            <label>Password:</label>
             <input type='password'value={password} onChange={(e) => setPassword(e.target.value)} required/>
             <br/>
             <button type='submit'>Login</button>
         </form>
-    </div></>}
+    </div>}
     
     </div>
   )
